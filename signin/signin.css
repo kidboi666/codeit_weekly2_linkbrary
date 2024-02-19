@@ -10,7 +10,7 @@
   --gray5-color: #f0f6ff;
 }
 body {
-  background-color: #f0f6ff;
+  background-color: var(--gray5-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,6 +46,24 @@ section .signin_form {
   flex-direction: column;
 }
 
+section .toggle_wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+section .signin_form img.password_eyes {
+  width: 20px;
+  position: absolute;
+  right: 15px;
+  bottom: 40px;
+  cursor: pointer;
+}
+
+section .signin_form img.password_eyes.eyes_offset {
+  bottom: 39px;
+}
+
 section label {
   margin-bottom: 12px;
   font-size: 14px;
@@ -65,6 +83,7 @@ section button {
   background-image: linear-gradient(270deg, #6ae3fe, var(--primary-color));
   color: #fff;
   font-size: 18px;
+  cursor: pointer;
 }
 
 footer {
