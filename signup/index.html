@@ -20,11 +20,19 @@
           <div class="toggle_wrap">
             <!-- 비번 표시 토글 버튼 기능을 위한 div-->
             <label for="passwordToggle" class="toggle_block">비밀번호</label>
-            <input id="passwordToggle" name="password" type="password" />
+            <input id="passwordToggle" class="password_input" name="password" type="password" />
             <img src="/asset/eye-on.svg" alt="" class="password_eyes" />
           </div>
-          <label for="passwordToggleRepeat" class="toggle_block"> 비밀번호 확인</label>
-          <input id="passwordToggleRepeat" name="password_repeat" type="password" />
+          <div class="toggle_wrap">
+            <label for="passwordToggleRepeat" class="toggle_block"> 비밀번호 확인</label>
+            <input
+              id="passwordToggleRepeat"
+              class="password_repeat_input"
+              name="password_repeat"
+              type="password"
+            />
+            <div id="wrong_message" class="hidden">비밀번호가 틀렸습니다.</div>
+          </div>
           <button type="submit" class="signup_button">회원가입</button>
         </form>
       </section>
@@ -38,6 +46,8 @@
         </div>
       </footer>
     </main>
-    <script src="/components/eyesOnOff.js"></script>
+    <!-- <script src="/components/eyesOnOff.js"></script>
+    <script src="/components/passwordRepeat.js"></script> -->
+    <script type="module" src="/main.js"></script>
   </body>
 </html>

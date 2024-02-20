@@ -1,8 +1,8 @@
-const $eyes = document.querySelector('.password_eyes');
-const $password = document.querySelector('#passwordToggle');
-const $passwordRe = document.querySelector('#passwordToggleRepeat');
+export const $eyes = document.querySelector('.password_eyes');
+export const $password = document.querySelector('#passwordToggle');
+export const $passwordRe = document.querySelector('#passwordToggleRepeat');
 
-const handlePasswordSight = (event) => {
+const handlePasswordSight = () => {
   if ($password.type === 'password') {
     $password.type = 'text';
     $eyes.src = '/asset/eye-off.svg';
@@ -16,4 +16,4 @@ const handlePasswordSight = (event) => {
   }
 };
 
-$eyes.addEventListener('click', handlePasswordSight);
+export default handlePasswordSight;

@@ -1,4 +1,4 @@
-const navScrollEvent = (event) => {
+const navScrollEvent = () => {
   const $nav = document.querySelector('.header_nav');
   console.dir($nav);
   if (window.scrollY > 30) {

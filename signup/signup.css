@@ -74,6 +74,20 @@ section input {
   border-radius: 8px;
   padding: 18px 15px;
   margin-bottom: 24px;
+  font-size: 14px;
+}
+
+section input.wrong_password {
+  border: 1px solid rgb(255, 96, 96);
+  position: relative;
+}
+
+section #wrong_message {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 14px;
+  color: rgb(255, 96, 96);
 }
 
 section button {
@@ -102,4 +116,8 @@ footer {
 footer .sns_wrap {
   display: flex;
   gap: 16px;
+}
+
+.hidden {
+  display: none;
 }
